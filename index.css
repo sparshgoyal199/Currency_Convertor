@@ -2,7 +2,7 @@
     width: 11vw;
     height: 21vh;
     position: absolute;
-    left: 41%;
+    left: 39.7%;
     top: 15%;
 }
 
@@ -11,7 +11,7 @@
     font-weight: 700;
     color: #7ab7aa;
     position: absolute;
-    left: 36%;
+    left: 33.5%;
     top: 38%;
 }
 #choose{
@@ -185,6 +185,102 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
         position: absolute;
         left: 14%;
         top: 69.5%;
+        height: 3.2vh;
+        width: 6vw;
+    }
+    #result{
+        font-size: 1.6vh;
+        position: absolute;
+        left: 70%;
+        top: 70.5%;
+    }
+    #swap{
+        height: 2.6vh;
+        font-size: 1.6vh;
+        background-color: #7ab7aa;
+        position: absolute;
+        left: 20%;
+        top: 55%;
+        color: azure;
+        border-radius: 4px;
+        border-color: rgba(0, 0, 0, 1.476);
+    }
+    #move{
+        position: absolute;
+        left: 59%;
+        font-size:1.6vh;
+        top: 55.3%;
+    }
+}
+
+@media only screen and (min-width:361px) and  (max-width:500px){
+    #bg{
+        width: 25vw;
+        height: 12vh;
+        position: absolute;
+        left: 37%;
+        top: 15%;
+    }
+
+    #ex{
+        font-size: 2.5vh;
+        font-weight: 700;
+        color: #7ab7aa;
+        position: absolute;
+        left: 23%;
+        top: 30%;
+    }
+
+    #choose{
+        font-size: 1.7vh;
+        position: absolute;
+        left: 20%;
+        top: 35%;
+    }
+
+    #flag1{
+        position: absolute;
+        left: 14%;
+        top: 41.5%;
+        height: 3.4vh;
+        width: 6vw;
+    }
+
+    #sala{
+        position: absolute;
+        left: 22.6%;
+        top: 41.5%;
+        width: 40vw;
+        font-size: 1.8vh;
+        border: None;
+        outline: 10px;
+        background-color: white;
+    }
+
+    #input_num{
+        width: 17vw;
+        font-size: 1.4vh;
+        position: absolute;
+        left: 70%;
+        top: 41.5%;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding-left: 4px;
+    }
+
+    #sala2{
+        position: absolute;
+        left: 22.6%;
+        top: 70%;
+        font-size: 1.8vh;
+        width: 40vw;
+        background-color: white;
+        border: none;
+    }
+    #flag2{
+        position: absolute;
+        left: 14%;
+        top: 70%;
         height: 3.2vh;
         width: 6vw;
     }

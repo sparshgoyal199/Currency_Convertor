@@ -9,7 +9,8 @@
 
 </head>
 <body class="body" >
-    <span id="move"></span>
+    <span id="move">
+    </span>
     <img src="download.png" id="bg">
     <span id="ex">Exchange Rate Calculator</span>
     <span id="choose">Select currency and amount for exchange rate</span>
@@ -73,7 +74,8 @@
         })
 
         async function name(e){
-        let inp_curr = document.getElementById("sala").value//*******as wif we write the inp_and out_curr in global scope than there value will never be get changed as when change_flag would run it will automatically change the select tag value ***//but we have already access the select tag value in our main stack (which performs first) and when side stack is running which is at last then the select tag changes but these changes will not reflect in the ino_curr and out_curr as these are in main stack
+        let inp_curr = document.getElementById('sala').value
+        //*******as wif we write the inp_and out_curr in global scope than there value will never be get changed as when change_flag would run it will automatically change the select tag value ***//but we have already access the select tag value in our main stack (which performs first) and when side stack is running which is at last then the select tag changes but these changes will not reflect in the ino_curr and out_curr as these are in main stack
         //**basically in saar  "document.getElementById("sala").value" accessing the value when the selected value is not changed
 
         let out_curr = document.getElementById("sala2").value
@@ -99,7 +101,7 @@
         else{
             ress.textContent = `${inp_curr} is obsoleted`
         }
-        change.textContent = `${parseInt(it.value).toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2})} ${inp_curr} = ${(bb * it.value).toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2})}  ${out_curr}` 
+        change.textContent = `${parseInt(it.value).toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2})} ${inp_curr} = ${(bb * it.value).toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2})}  ${out_curr}`
         }
         window.onload = (() =>{document.querySelector('#swap').click()})
 
