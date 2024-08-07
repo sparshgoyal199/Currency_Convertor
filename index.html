@@ -21,7 +21,7 @@
         <img src="https://flagsapi.com/US/flat/64.png" id="flag2">
         <select id="sala2"></select>
 
-<input id="input_num" type="number" placeholder="Enter the amount" min="1" >
+<input id="input_num" type="number" placeholder="Enter the amount" min="0" value="1" >
 <span id="result"></span>
 <script src="code.js"></script>
 <script src="index.js"></script>
@@ -88,8 +88,8 @@
         let it = document.getElementById("input_num")
         if(c.rates){
             bb = c.rates[out_curr]
-            if(it.value <= 0){
-            it.value = 1
+            if(!it.value){
+                it.value = ''
             }
             if(bb){
                 let val = bb*it.value
@@ -101,7 +101,7 @@
         else{
             ress.textContent = `${inp_curr} is obsoleted`
         }
-        change.textContent = `${parseInt(it.value).toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2})} ${inp_curr} = ${(bb * it.value).toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2})}  ${out_curr}`
+        change.textContent = `${parseInt(it.value*1).toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2})} ${inp_curr} = ${(bb * it.value).toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2})}  ${out_curr}`
         }
         window.onload = (() =>{document.querySelector('#swap').click()})
 
