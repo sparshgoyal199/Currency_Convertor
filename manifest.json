@@ -1,0 +1,11 @@
+{
+    "name": "My Web App",
+    "short_name": "WebApp",
+    "start_url": "index.html",
+    "display": "standalone",
+    "icons": [{
+        "src": "6.png",
+        "sizes": "192x192",
+        "type": "image/png"
+    }]
+}
