@@ -1,11 +1,8 @@
 {
-    "name": "My Web App",
-    "short_name": "WebApp",
-    "start_url": "index.html",
-    "display": "standalone",
-    "icons": [{
-        "src": "6.png",
-        "sizes": "192x192",
-        "type": "image/png"
-    }]
+  "name": "Adstacks",
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "short_name": "Adstacks",
+  "id": "adstacks",
+  "description": "This is a test app for adstacks"
 }
