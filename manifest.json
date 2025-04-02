@@ -1,7 +1,7 @@
 {
   "name": "Adstacks",
   "short_name": "Adstacks",
-  "start_url": "/Currency_Convertor/main.html",
+  "start_url": "/main.html",
   "scope": "/",
   "display": "standalone",
   "background_color": "#ffffff",
